@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QR Code Reader</title>
+  </head>
+  <body>
+    <div class="qrcode-reader">
+      <div class="title">
+        <img src="/images/confirmation.png" alt="" />
+        <h1>QR Code Reader</h1>
+      </div>
+      <form id="upload-form">
+        <input type="file" id="upload-input" accept="image/*" />
+        <label for="upload-input" id="upload-label">
+          <span class="choose-file-label">Choose file </span>
+          <span id="selected-file">No file choosen</span>
+        </label>
+        <button type="submit" class="read-button">Read</button>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.0/dist/jsQR.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 50px 10px;
+}
+
+.qrcode-reader {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title > h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.title > img {
+  height: 50px;
+}
+
+#upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#upload-input {
+  display: none;
+}
+
+#upload-label {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choose-file-label {
+  border-right: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+.read-button {
+  font-size: 16px;
+  padding: 2px 15px;
+  border-radius: 5px;
+  color: #000;
+  background: #f0bc5e;
+  border: 1px solid #f0bc5e;
+  outline: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.read-button:hover {
+  background: none;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+#result {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-title {
+  font-weight: bold;
+}
